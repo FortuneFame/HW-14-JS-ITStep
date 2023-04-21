@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.calculatorGrid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 90px);
+}
+
+.calculatorGrid>button {
+    margin: 2px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 #676767, 0 2px 5px 0 #cfcfcf;
+}
+
+.calculatorGrid>button:hover {
+    box-shadow: 0 1px 1px 0 #676767, 0 2px 3px 0 #645d5d;
+    transition: .1s ease-in-out;
+}
+
+.calculatorGrid>button:active {
+    transform: scale(0.98);
+    transition: .15s ease-in-out;
+}
+
+.spanTwo {
+    grid-column: span 2;
+}
+
+.output {
+    margin: 2px;
+    grid-column: 1 / -1;
+    background-color: #dedede;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 #676767, 0 2px 5px 0 #cfcfcf;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.operation,
+.result,
+.dot,
+.zero {
+    background-color: #dedede;
+}
+
+.allClear,
+.delete {
+    font-size: 40px;
+    background-color: #ff9955;
+}
+
+.previous {
+    font-size: 20px;
+}
+
+.current {
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnHome {
+    display: block;
+    float: left;
+    margin: 20px 20px;
+    padding: 10px 20px;
+    color: #212121;
+    list-style: none;
+    border: 1px solid #ff6b08;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.btnHome:hover,
+.btnHome:focus,
+.btnHome:active {
+    background-color: #ff6b08;
+    color: #ffffff;
+    border-color: #ff6b08;
+    box-shadow: 0px 0px 5px 2px rgba(255, 107, 8, 0.29);
+    transition: .15s ease-in-out;
+}
+
+.content {
+    display: block;
+    align-items: center;
+}

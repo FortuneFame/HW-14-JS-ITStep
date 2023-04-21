@@ -43,7 +43,7 @@ playRound.onclick = () => {
         resultEl.innerHTML = `<h2>Вы Выиграли эту игру 🥳 </h2></br><h2>Cо счётом</h><h1>${playerScore} : ${botScore}</h1>`;
         resetGame();
     } else if (botScore == 3) {
-        resultEl.innerHTML = `<h2>Вы Проиграли эту игру 🥺 </h2></br><h2>Cо счётом</h2><h1>${botScore} : ${playerScore}</h1>`;
+        resultEl.innerHTML = `<h2>Вы Проиграли эту игру 🥺 </h2></br><h2>Cо счётом</h2><h1>${playerScore} : ${botScore}</h1>`;
         resetGame();
     } else {
         resultEl.innerHTML = resultText;
